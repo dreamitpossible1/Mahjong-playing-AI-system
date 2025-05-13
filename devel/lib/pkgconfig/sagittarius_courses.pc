@@ -1,0 +1,8 @@
+prefix=/home/robotics/Team12/devel
+
+Name: sagittarius_courses
+Description: Description of sagittarius_courses
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
