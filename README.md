@@ -4,8 +4,6 @@ This project is the final assignment for the AIR5021 course at The Chinese Unive
 
 We designed a simplified Mahjong-playing system using a **Sagittarius 6-DOF robotic arm**, capable of recognizing tiles, making decisions, and executing motions.
 
----
-
 ## 🦾 Project Overview
 
 The project is based on the Sagittarius robotic arm, which includes the following components:
