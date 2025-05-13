@@ -17,14 +17,6 @@ The project is based on the Sagittarius robotic arm, which includes the followin
 
 > ✳️ The Sagittarius robot is a six-axis (6-DoF) robotic manipulator, allowing it to imitate human-like arm motions.
 
-### Mechanical Structure of Sagittarius Robot:
-
-*(Please upload the image to the repository and reference it properly. Example below:)*
-
-![Sagittarius Robot](images/sagittarius_arm.jpg)
-
----
-
 ## 🚀 Getting Started
 
 ### Step 1: Launch the Simulation Environment
@@ -46,8 +38,6 @@ rosrun sagittarius_courses motion_controller.py __ns:=sgr532
 ## 📚 Acknowledgements
 
 We would like to thank the AIR5021 teaching staff for their guidance, and the Sagittarius open-source team for providing the hardware/software framework.
-
-------
 
 ## 📌 Notes
 
