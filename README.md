@@ -1,9 +1,9 @@
 ## Project Title
-A Mahjong-playing System for RB3 Gen2 Utilizing Depth Images
+Mahjong-playing AI System for RB3 Gen2 Using Depth Images
 
 
 ## Overview
-This project develops a robot arm system for RB3 Gen2 using depth images. RB3 Gen2 serves as the core hardware platform, offering advanced motion control and sensor capabilities. Depth images enable the robot arm to perceive 3D environments for tasks like object recognition and grasping. The Qualcomm Intelligent Robotics Product SDK is utilized for efficient image processing and seamless integration with RB3 Gen2, enhancing the system's performance and reliability.
+This project creates a Mahjong-playing AI system for RB3 Gen2, incorporating depth images. RB3 Gen2 acts as the core hardware platform with advanced motion control and sensors. Depth images let the robot arm perceive 3D environments for recognizing and grasping Mahjong tiles. The Qualcomm Intelligent Robotics Product SDK is used for efficient image processing and integration with RB3 Gen2, boosting the system's performance and reliability. Additionally, AI algorithms are employed to analyze game situations and make strategic decisions, enabling the robot to play Mahjong effectively.
 ## Quick Start with QualComm RB3 gen2
 Download the precompiled package for RB3 Gen2：
 
