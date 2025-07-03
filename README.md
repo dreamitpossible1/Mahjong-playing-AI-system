@@ -45,6 +45,11 @@ Open another terminal and run:
 python socket_user_majiang.py
 ```
 
+## 📹 Results Display
+
+https://github.com/dreamitpossible1/Robot-arm-based-on-depth-images/blob/main/Scipts_RB3/Robot-arm-based-on-depth-images.mp4
+
+
 ## 📚 Acknowledgements
 
 We would like to thank the AIR5021 teaching staff for their guidance, and the Sagittarius open-source team for providing the hardware/software framework.
