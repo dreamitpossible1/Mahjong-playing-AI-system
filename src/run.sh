@@ -13,4 +13,4 @@ echo "因为它是简单的摄像头显示和图像分析应用。"
 echo ""
 
 
-python3 test_n3.py
+python3 socket_server_majiang.py
