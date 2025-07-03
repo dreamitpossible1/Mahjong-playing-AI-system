@@ -47,7 +47,7 @@ python socket_user_majiang.py
 
 ## 📹 Results Display
 
-https://github.com/dreamitpossible1/Robot-arm-based-on-depth-images/blob/main/Scipts_RB3/Robot-arm-based-on-depth-images.mp4
+https://github.com/dreamitpossible1/Mahjong-playing-AI-system/blob/main/Mahjong-playing-AI-system.mp4
 
 
 ## 📚 Acknowledgements
