@@ -34,7 +34,7 @@ The project is based on the Sagittarius robotic arm, which includes the followin
 Open a terminal and run:
 
 ```bash
-roslaunch sdk_sagittarius_arm rviz_control_sagittarius.launch
+./run.sh
 ```
 
 ### Step 2: Start the Mahjong Motion Controller
@@ -42,7 +42,7 @@ roslaunch sdk_sagittarius_arm rviz_control_sagittarius.launch
 Open another terminal and run:
 
 ```shell
-rosrun sagittarius_courses motion_controller.py __ns:=sgr532
+python socket_user_majiang.py
 ```
 
 ## 📚 Acknowledgements
