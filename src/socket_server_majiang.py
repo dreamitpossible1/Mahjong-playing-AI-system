@@ -308,7 +308,7 @@ if __name__ == '__main__':
     udp_wait_client()
 
     # 设置 API Key 和 DashScope URL
-    api_key = "sk-c1ebd74f1d1a4f1ebaf85ab50090a1be" # 替换为你的真实 API Key
+    api_key = "sk-" # 替换为你的真实 API Key
     base_url = "https://dashscope.aliyuncs.com/compatible-mode/v1"
 
     # 初始化聊天对象
