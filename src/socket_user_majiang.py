@@ -162,6 +162,60 @@ try:
         swift.set_position(x=260, y=0, z=100, wait=True)
         print("到达地面:", swift.get_position())
         time.sleep(1)
+    elif recommended_tile == "七万":
+        swift.set_position(x=95, y=100, z=100, wait=True)
+        print("到达地面:", swift.get_position())
+        time.sleep(1)
+
+        swift.set_position(x=95, y=225, z=100, wait=True)
+        print("到达地面:", swift.get_position())
+        time.sleep(1)
+
+        swift.set_position(x=95, y=225, z=42, wait=True)
+        print("到达地面:", swift.get_position())
+        time.sleep(1)
+
+        swift.set_pump(on=True)
+        time.sleep(1)
+
+        swift.set_position(x=95, y=225, z=100, wait=True)
+        print("到达地面:", swift.get_position())
+        time.sleep(1)
+
+        swift.set_position(x=210, y=155, z=100, wait=True)
+        print("到达地面:", swift.get_position())
+        time.sleep(1)
+
+        swift.set_position(x=210, y=155, z=47, wait=True)
+        print("到达地面:", swift.get_position())
+        time.sleep(1)
+
+        swift.set_pump(on=False)
+        time.sleep(1)
+
+        swift.set_position(x=210, y=155, z=80, wait=True)
+        print("到达地面:", swift.get_position())
+        time.sleep(1)
+
+        swift.set_position(x=180, y=155, z=80, wait=True)
+        print("到达地面:", swift.get_position())
+        time.sleep(1)
+
+        swift.set_position(x=180, y=155, z=42, wait=True)
+        print("到达地面:", swift.get_position())
+        time.sleep(1)
+
+        swift.set_position(x=260, y=155, z=42, wait=True)
+        print("到达地面:", swift.get_position())
+        time.sleep(1)
+
+        swift.set_position(x=260, y=155, z=100, wait=True)
+        print("到达地面:", swift.get_position())
+        time.sleep(1)
+
+        swift.set_position(x=260, y=0, z=100, wait=True)
+        print("到达地面:", swift.get_position())
+        time.sleep(1)
     elif recommended_tile == "八万":
         swift.set_position(x=95, y=100, z=100, wait=True)
         print("到达地面:", swift.get_position())
@@ -216,7 +270,60 @@ try:
         swift.set_position(x=260, y=0, z=100, wait=True)
         print("到达地面:", swift.get_position())
         time.sleep(1)
-    
+    elif recommended_tile == "九万":
+        swift.set_position(x=95, y=100, z=100, wait=True)
+        print("到达地面:", swift.get_position())
+        time.sleep(1)
+
+        swift.set_position(x=95, y=295, z=100, wait=True)
+        print("到达地面:", swift.get_position())
+        time.sleep(1)
+
+        swift.set_position(x=95, y=295, z=42, wait=True)
+        print("到达地面:", swift.get_position())
+        time.sleep(1)
+
+        swift.set_pump(on=True)
+        time.sleep(1)
+
+        swift.set_position(x=95, y=295, z=100, wait=True)
+        print("到达地面:", swift.get_position())
+        time.sleep(1)
+
+        swift.set_position(x=210, y=155, z=100, wait=True)
+        print("到达地面:", swift.get_position())
+        time.sleep(1)
+
+        swift.set_position(x=210, y=155, z=47, wait=True)
+        print("到达地面:", swift.get_position())
+        time.sleep(1)
+
+        swift.set_pump(on=False)
+        time.sleep(1)
+
+        swift.set_position(x=210, y=155, z=80, wait=True)
+        print("到达地面:", swift.get_position())
+        time.sleep(1)
+
+        swift.set_position(x=180, y=155, z=80, wait=True)
+        print("到达地面:", swift.get_position())
+        time.sleep(1)
+
+        swift.set_position(x=180, y=155, z=42, wait=True)
+        print("到达地面:", swift.get_position())
+        time.sleep(1)
+
+        swift.set_position(x=260, y=155, z=42, wait=True)
+        print("到达地面:", swift.get_position())
+        time.sleep(1)
+
+        swift.set_position(x=260, y=155, z=100, wait=True)
+        print("到达地面:", swift.get_position())
+        time.sleep(1)
+
+        swift.set_position(x=260, y=0, z=100, wait=True)
+        print("到达地面:", swift.get_position())
+        time.sleep(1)
     else:
         print(f"未定义的推荐牌: {recommended_tile}")
     
