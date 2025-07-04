@@ -162,7 +162,16 @@ def analyze_image(image_path, chatbot):
         start_time = time.time()
         
         # 调用模型分析图片
-        prompt = "请帮我识别这张图片中的麻将牌，并告诉我当前手牌是什么？然后根据麻将规则，建议我打哪一张牌？请用中文回答。"
+        prompt = """请帮我识别这张图片中的麻将牌，并告诉我当前手牌是什么？然后根据麻将规则，建议我打哪一张牌？
+
+请按照以下格式回答：
+1. 首先识别手牌：[列出所有手牌]
+2. 然后给出建议：建议打出 [具体牌名，如：五万、九筒、三条等]
+
+注意：
+- 请使用标准的中文数字（一二三四五六七八九）和花色（万、筒、条）
+- 推荐时请明确说出"建议打出"或"推荐打出"等关键词
+- 如果推荐多张牌，请选择其中一张作为最终推荐"""
         response = chatbot.chat_round(prompt=prompt, image_path=image_path)
         
         end_time = time.time()
@@ -173,15 +182,86 @@ def analyze_image(image_path, chatbot):
         # 从响应中提取推荐的牌
         import re
         recommended_tile = None
-        # 尝试从回复中提取推荐的牌
-        match = re.search(r'建议你[打出|打|出].*?([一二三四五六七八九][\u4e07\u7b79\u6761])', response)
-        if match:
-            recommended_tile = match.group(1)
+        
+        # 定义数字映射表（处理"五万"和"伍万"等不同表达）
+        number_mapping = {
+            '一': '一', '二': '二', '三': '三', '四': '四', '五': '伍', '伍': '伍',
+            '六': '六', '七': '七', '八': '八', '九': '九'
+        }
+        
+        # 定义花色映射表
+        suit_mapping = {
+            '万': '万', '萬': '万',  # 处理繁体字
+            '筒': '筒', '饼': '筒',  # 处理不同叫法
+            '条': '条', '條': '条', '索': '条'  # 处理不同叫法
+        }
+        
+        # 多种模式匹配推荐牌
+        patterns = [
+            # 模式1: "建议你打出/打/出 五万"
+            r'建议你[打出|打|出].*?([一二三四五六七八九伍][万筒条萬條])',
+            # 模式2: "推荐打出 五万"
+            r'推荐[打出|打|出].*?([一二三四五六七八九伍][万筒条萬條])',
+            # 模式3: "可以打出 五万"
+            r'可以[打出|打|出].*?([一二三四五六七八九伍][万筒条萬條])',
+            # 模式4: "选择打出 五万"
+            r'选择[打出|打|出].*?([一二三四五六七八九伍][万筒条萬條])',
+            # 模式5: "比如 五万" (处理"比如 九万"这种格式)
+            r'比如.*?([一二三四五六七八九伍][万筒条萬條])',
+            # 模式6: "随机选择 五万"
+            r'随机选择.*?([一二三四五六七八九伍][万筒条萬條])',
+            # 模式7: "**五万**" (处理加粗格式)
+            r'\*\*([一二三四五六七八九伍][万筒条萬條])\*\*',
+            # 模式8: 直接匹配牌名
+            r'([一二三四五六七八九伍][万筒条萬條])'
+        ]
+        
+        # 尝试所有模式
+        print("开始提取推荐牌...")
+        for i, pattern in enumerate(patterns):
+            matches = re.findall(pattern, response)
+            if matches:
+                print(f"模式{i+1}匹配成功: {matches}")
+                # 取第一个匹配的牌
+                raw_tile = matches[0]
+                print(f"原始匹配: {raw_tile}")
+                
+                # 标准化牌名
+                number_char = raw_tile[0]
+                suit_char = raw_tile[1]
+                
+                # 转换数字
+                if number_char in number_mapping:
+                    number = number_mapping[number_char]
+                    print(f"数字转换: {number_char} -> {number}")
+                else:
+                    number = number_char
+                    print(f"数字保持原样: {number_char}")
+                
+                # 转换花色
+                if suit_char in suit_mapping:
+                    suit = suit_mapping[suit_char]
+                    print(f"花色转换: {suit_char} -> {suit}")
+                else:
+                    suit = suit_char
+                    print(f"花色保持原样: {suit_char}")
+                
+                # 组合成标准格式
+                recommended_tile = f"{number}{suit}"
+                print(f"标准化后的牌: {recommended_tile}")
+                break
+            else:
+                print(f"模式{i+1}未匹配")
+        
+        if recommended_tile:
             print(f"提取到推荐打出的牌: {recommended_tile}")
             # 发送推荐的牌给客户端
             if client_address:  # 确保客户端已连接
                 server_socket.sendto(recommended_tile.encode(), client_address)
                 print(f"已发送推荐牌 {recommended_tile} 给客户端")
+        else:
+            print("未能从回复中提取到推荐的牌")
+            print("完整回复内容:", response)
         
     except Exception as e:
         print(f"分析图片 {image_path} 时出错:", str(e))
