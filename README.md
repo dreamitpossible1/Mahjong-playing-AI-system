@@ -1,9 +1,9 @@
 ## Project Title
-Mahjong-playing AI System for RB3 Gen2 Using Depth Images
+Vision-Language Model-Based Mahjong AI System for RB3 Gen2
 
 
 ## Overview
-This project creates a Mahjong-playing AI system for RB3 Gen2, incorporating depth images. RB3 Gen2 acts as the core hardware platform with advanced motion control and sensors. Depth images let the robot arm perceive 3D environments for recognizing and grasping Mahjong tiles. The Qualcomm Intelligent Robotics Product SDK is used for efficient image processing and integration with RB3 Gen2, boosting the system's performance and reliability. Additionally, AI algorithms are employed to analyze game situations and make strategic decisions, enabling the robot to play Mahjong effectively.
+This project develops a Mahjong-playing AI system for the RB3 Gen2 platform based on Vision-Language Models (VLMs). As the core hardware platform, RB3 Gen2 enables the system to process both visual and natural language information simultaneously through the integration of VLMs, allowing for accurate recognition and understanding of Mahjong tiles and game states.Unlike traditional approaches that rely solely on depth images, this system adopts multimodal inputs—such as RGB images and linguistic context—and processes them through VLMs to achieve a more comprehensive understanding of the game environment. The system analyzes the current game situation and formulates strategies accordingly, enabling the robot to play Mahjong intelligently and adaptively.
 ## Quick Start with QualComm RB3 gen2
 Download the precompiled package for RB3 Gen2：
 
@@ -18,14 +18,14 @@ The specific content is as follows:[QualComm Intelligent Robotics Product SDK Qu
 
 ## 🦾 Project Overview
 
-The project is based on the Sagittarius robotic arm, which includes the following components:
+This project is based on the uArm Swift Pro robotic arm, which mainly consists of the following components:
 
-- **End Effector**: A gripper mounted on the arm to manipulate Mahjong tiles.
-- **Drive System**: Six servo motors, each controlling one degree of freedom (DoF).
-- **Sensing System**: A camera-based vision module that captures images of Mahjong tiles.
-- **Control System**: A CM9.04 controller at the base of the arm, acting as the core control unit.
+- **End Effector**: Equipped with a suction pump, used for picking up and moving Mahjong tiles.
+- **Drive System**: Composed of four servo motors, each controlling one degree of freedom (4-DoF), enabling precise and smooth motion control.
+- **Control System**: An integrated controller that supports both Arduino and Python development environments, serving as the core control unit of the robotic arm.
+ 
+> ✳️ The uArm Swift Pro is a four-axis (4-DoF) robotic manipulator known for its high precision and repeatability, making it ideal for lightweight object manipulation and interactive gaming tasks.
 
-> ✳️ The Sagittarius robot is a six-axis (6-DoF) robotic manipulator, allowing it to imitate human-like arm motions.
 
 ## 🚀 Getting Started
 
@@ -45,7 +45,7 @@ Open another terminal and run:
 python socket_user_majiang.py
 ```
 
-## 📹 Results Display
+📹 Results Display
 
 https://github.com/dreamitpossible1/Mahjong-playing-AI-system/blob/main/Mahjong-playing-AI-system.mp4
 
