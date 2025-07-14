@@ -64,8 +64,8 @@ python socket_user_majiang.py
 
 📹 Results Display
 
-[Display](https://github.com/dreamitpossible1/Mahjong-playing-AI-system/blob/main/Mahjong-playing-AI-system.mp4)
 
+<video src="https://github.com/dreamitpossible1/Mahjong-playing-AI-system/raw/main/Mahjong-playing-AI-system.mp4" width="640" controls></video>
 
 
 ## Resources
