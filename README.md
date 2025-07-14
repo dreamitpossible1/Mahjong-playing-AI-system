@@ -16,6 +16,19 @@ unzip arm-qcom-6.6.65-QLI.1.4-Ver.1.1_robotics-product-sdk-1.1.zip
 The specific content is as follows:[QualComm Intelligent Robotics Product SDK Quick Start]([QIRP User Guide - Qualcomm® Linux Documentation](https://docs.qualcomm.com/bundle/publicresource/topics/80-70018-265/quick-start_3.html?vproduct=1601111740013072&version=1.4&facet=Qualcomm Intelligent Robotics Product (QIRP) SDK)
 
 
+## Quick Start with uArm Swift Pro
+
+1. Download [uArm-Python-SDK]https://github.com/uArm-Developer/uArm-Python-SDK.git
+
+```bash
+git clone https://github.com/uArm-Developer/uArm-Python-SDK.git
+```
+2. Installation
+```bash
+   python setup.py install
+```
+
+
 ## 🦾 Project Overview
 
 This project is based on the uArm Swift Pro robotic arm, which mainly consists of the following components:
