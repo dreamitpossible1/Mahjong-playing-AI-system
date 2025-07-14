@@ -70,9 +70,3 @@ https://github.com/dreamitpossible1/Mahjong-playing-AI-system/blob/main/Mahjong-
 
 - [QualComm Intelligent Robotics Product SDK](https://docs.qualcomm.com/bundle/publicresource/topics/80-70018-265/introduction_1.html?vproduct=1601111740013072&version=1.4&facet=Qualcomm Intelligent Robotics Product (QIRP) SDK)
 
-
-
-## 📌 Notes
-
-- The Mahjong game rules have been simplified for demonstration purposes.
-- Please make sure the ROS environment and the Sagittarius SDK are properly configured.
