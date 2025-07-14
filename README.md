@@ -7,12 +7,15 @@ This project develops a Mahjong-playing AI system for the RB3 Gen2 platform base
 ## Quick Start with QualComm RB3 gen2
 Download the precompiled package for RB3 Gen2：
 
+```bash
 wget https://artifacts.codelinaro.org/artifactory/qli-ci/flashable-binaries/qirpsdk/qcs6490-rb3gen2-vision-kit/arm-qcom-6.6.65-QLI.1.4-Ver.1.1_robotics-product-sdk-1.1.zip
+```
 
 Use the following command to unzip the package:
 
+```bash
 unzip arm-qcom-6.6.65-QLI.1.4-Ver.1.1_robotics-product-sdk-1.1.zip
-
+```
 
 Before you start, make sure finish [QualComm Intelligent Robotics Product SDK Quick Start]([QIRP User Guide - Qualcomm® Linux Documentation](https://docs.qualcomm.com/bundle/publicresource/topics/80-70018-265/quick-start_3.html?vproduct=1601111740013072&version=1.4&facet=Qualcomm Intelligent Robotics Product (QIRP) SDK)
 
@@ -61,7 +64,7 @@ python socket_user_majiang.py
 
 📹 Results Display
 
-[Display](https://github.com/dreamitpossible1/Mahjong-playing-AI-system/blob/main/Mahjong-playing-AI-system.mp4）
+[Display](https://github.com/dreamitpossible1/Mahjong-playing-AI-system/blob/main/Mahjong-playing-AI-system.mp4)
 
 
 ## Reference
