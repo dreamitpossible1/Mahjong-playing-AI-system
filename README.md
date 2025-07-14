@@ -67,6 +67,21 @@ python socket_user_majiang.py
 [Display](https://github.com/dreamitpossible1/Mahjong-playing-AI-system/blob/main/Mahjong-playing-AI-system.mp4)
 
 
+
+## Resources
+
+### 📚 Official Documentation
+
+* [QIRP SDK Introduction](https://docs.qualcomm.com/bundle/publicresource/topics/80-70018-265/introduction_1.html?vproduct=1601111740013072&version=1.4&facet=Qualcomm%20Intelligent%20Robotics%20Product%20%28QIRP%29%20SDK)
+* [QIRP Quick Start Guide](https://docs.qualcomm.com/bundle/publicresource/topics/80-70018-265/quick-start_3.html?vproduct=1601111740013072&version=1.4)
+
+### 🔗 External References
+
+* [Qualcomm Linux](https://www.qualcomm.com/developer/software/qualcomm-linux)
+
+---
+
+
 ## Reference
 
 - [Qualcomm Linux](https://www.qualcomm.com/developer/software/qualcomm-linux)
