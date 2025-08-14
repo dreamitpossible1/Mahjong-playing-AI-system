@@ -4,6 +4,10 @@ Vision-Language Model-Based Mahjong AI System for RB3 Gen2
 
 ## Overview
 This project develops a Mahjong-playing AI system for the RB3 Gen2 platform based on Vision-Language Models (VLMs). As the core hardware platform, RB3 Gen2 enables the system to process both visual and natural language information simultaneously through the integration of VLMs, allowing for accurate recognition and understanding of Mahjong tiles and game states.Unlike traditional approaches that rely solely on depth images, this system adopts multimodal inputs—such as RGB images and linguistic context—and processes them through VLMs to achieve a more comprehensive understanding of the game environment. The system analyzes the current game situation and formulates strategies accordingly, enabling the robot to play Mahjong intelligently and adaptively.
+
+
+ <p align="center"> <img src="https://github.com/dreamitpossible1/Mahjong-playing-AI-system/blob/main/pictures/Technical%20flowchart.png" />
+<p align="center"><i>Figure 1: Technical Flowchart</i></p>
 ## Quick Start with QualComm RB3 gen2
 Download the precompiled package for RB3 Gen2：
 
